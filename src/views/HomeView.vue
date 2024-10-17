@@ -56,17 +56,10 @@ const scrollHandler = (e) => {
     }
   }
 }
-
-const color = ref('');
 </script>
 
 <template>
   <main class="w-full bg-white dark:bg-gray-800 text-black dark:text-white mx-auto" style="max-width: 1200px">
-    <input v-model="color" type="text" />
-
-    <div style="width: 100px; height: 100px;" class="box-color">
-
-    </div>
     <div class="m-5 -mt-5 px-3 py-1 bg-gray-200 dark:bg-gray-900 rounded-md w-fit text-sm">{{ countries.length }}</div>
     <div v-if="loading">
       <Loader />
@@ -111,9 +104,3 @@ const color = ref('');
     </div>
   </main>
 </template>
-
-<style>
-.box-color {
-  background: white;
-}
-</style>
